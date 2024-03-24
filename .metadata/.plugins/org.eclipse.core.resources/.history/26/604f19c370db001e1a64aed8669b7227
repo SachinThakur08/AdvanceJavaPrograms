@@ -1,0 +1,50 @@
+package com.satya.ListofProductApplication;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class ProductDAO {
+	
+	public static  int save(Product Prod) {
+		 int count = 0;
+		 Connection c=null;
+		PreparedStatement pr=null;
+		try {
+		 c=DBConnection.createConnection();
+		  pr=c.prepareStatement("insert into product_details values(?,?,?,?,?,?,?,?)");
+        
+		   pr.setString(1, Prod.getProId());
+		   pr.setString(2, Prod.getProName());
+		   pr.setDouble(3, Prod.getProPrice());
+		   pr.setString(4, Prod.getProBrand()); 
+		   pr.setString(5, Prod.getProMadeIn());
+		   pr.setDate(6,   Prod.getProMFGDt());
+		   pr.setDate(7,   Prod.getProEXPDt());	  
+          pr.setBytes(8,  Prod.getProImage());
+     
+		  count= pr.executeUpdate();
+		     
+
+		  
+		   }
+		catch (Exception e) {
+	
+		  e.printStackTrace();
+		}
+	finally {
+		            try {
+		                   if(pr!=null)
+			 	             pr.close();
+				           if(c!=null)
+			                 c.close();
+			              } 
+		            catch(Exception e) {	
+		            	
+		                e.printStackTrace();
+		                
+		                }
+		   
+		          }
+	         return count;
+	     }
+}

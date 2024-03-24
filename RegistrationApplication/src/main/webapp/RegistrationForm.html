@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body bgcolor = "Cyan">
+
+<h1>Registration Form </h1>
+
+<form method = "get"  action = "./RegistrationServlet">
+
+<label>UserName : </label>
+<input type = "text" name = "userName" requried/>
+
+<br><br>
+
+
+<label>User Password : </label>
+<input type = "password" name = "password" requried/>
+
+<br><br>
+<label>User Number</label>
+<input type = "number" name = "number" requried/>
+
+<br><br>
+
+<label>User Email : </label>
+<input type = "email" name = "email" requried/>
+
+<br><br>
+
+<label>DOB : </label>
+<input type = "date" name = "date" / requried >
+<br><br>
+
+
+<label>Gender : </label>
+<input type = "radio" name = "gender" requried value = "MALE"/>MALE
+<input type = "radio" name = "gender" requried/ value= "FEMALE">FEMALE
+
+<br><br>
+
+<label>Qualifications : </label>
+<input type = "checkbox" name = "qualification"  value = "BTECH"/>BTECH
+<input type = "checkbox" name = "qualification"  value = "BSC"/>BSC
+<input type = "checkbox" name = "qualification" value = "MTECH" />MTECH
+<input type = "checkbox" name = "qualification"  value = "MSC"/>MSC
+
+<br><br>
+
+
+<label>Languages : </label>
+<select rows= "3" name = "languages" multiple>
+<option>Hindi </option>
+<option>Telugu </option>
+<option>English </option>
+<option>Tamil </option>
+</select>
+
+<br><br>
+
+<label>Country : </label>
+<select name = "country">
+<option>USA</option>
+<option>INDIA</option>
+<option>CHINA</option>
+<option>SRI LANKA</option>
+</select>
+
+<br><br>
+
+<label>Comments : </label>
+<textarea rows = "5" cols = "100"  name = "comments">
+
+</textarea>
+
+<br><br>
+
+<input type = "submit" value = "Register"/>
+
+</form>
+</body>
+
+
+</html>

@@ -1,0 +1,34 @@
+package com.sathya.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class ProductDao {
+	
+	Connection connection = null;
+	PreparedStatement preparedStatement = null;
+	
+	//1 Creating the Product Table in DB //
+	
+	String sql = "create table if not exist Product("
+			+ "proId  number ,"
+			+ "proName Varchar2(10) , "
+			+ "proPrice number,"
+			+")";
+	
+	public int creatproductTable() {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		return 0;
+		
+	}
+
+}

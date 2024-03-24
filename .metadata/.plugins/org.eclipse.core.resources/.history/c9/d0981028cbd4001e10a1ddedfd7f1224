@@ -1,0 +1,24 @@
+
+var massR = prompt("Enter tge Mass of Ratan ");
+var heightR = prompt("Enter tge Height of Ratan ");
+var massA = prompt("Enter tge Mass of Anu");
+var heightA = prompt("Enter tge Height of Anu ");
+
+var BMIR , BMIA ;
+
+BMIR = massR/(heightR*heightR) ;
+BMIA = massA/(heightA*heightA) ;
+
+console.log(BMIR);
+console.log(BMIA);
+
+document.write("BMI of Ratan = " + BMIR +"\n");
+document.write("BMI of Anu = " + BMIA +"\n");
+
+
+let HigherBMIR= true ;
+console.log(HigherBMIR);
+document.write("BMI of Ratanis Higher " + HigherBMIR +"\n");
+
+
+

@@ -1,0 +1,79 @@
+<html>
+<head>
+   
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="formvalidations.js"></script>
+ </head>
+
+<body class="bg-warning">
+    <div class="container mt-5  text-center">
+       <h2 class="text-center font-italic mb-2">SAVE PRODUCT Data....</h2>
+       
+        <form method="post" action="./AddProductServlet" enctype="multipart/form-data" onsubmit="return validateForm()">
+        
+          
+              <div class="form-group">
+                    <label class="font-intalic font-weight-bold" for="proId">
+                    Product ID:</label>
+                   <input type="text" class="form-control-sm" id="proId" name="proId"> 
+               </div>
+         
+                 <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="proNAme">
+                         Product Name:</label>
+                        <input type="text" class="form-control-sm" id="proNAme" name="proName" required=""> 
+                 </div>
+                 
+                 <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="ProPrice">
+                         Product Price:</label>
+                        <input type="text" class="form-control-sm" id="proPrice" name="proPrice" required=""> 
+                 </div>
+                 
+                 <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="ProBrand">
+                         Product Brand:</label>
+                        <input type="text" class="form-control-sm" id="ProBrand" name="ProBrand" required=""> 
+                 </div>
+                 
+                 
+                 <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="MadeIn">
+                          MadeIn:</label>
+                        <input type="text" class="form-control-sm" id="MadeIn" name="MadeIn" required=""> 
+                 </div>
+                 
+                 
+                  <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="mfgdate">
+                         Product MfgDate:</label>
+                        <input type="Date" class="form-control-sm" id="mfgdate" name="mfgdate" required=""> 
+                 </div>
+                 
+                 
+                  <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="expdate">
+                         Product ExpDate:</label>
+                        <input type="Date" class="form-control-sm" id="expdate" name="expdate" required=""> 
+                 </div>
+                 
+                  
+                 
+                  <div class="form-group">
+                     <label class="font-intalic font-weight-bold" for="ProImage">
+                         Product Image:</label>
+                        <input type="file" class="form-control-sm" id="ProImage" name="ProImage" accept="Image/*" required=""> 
+                 </div>
+                 
+                 
+                  <div>
+                      <input type="submit" class="btn btn-success" value="save product">
+                        <a href="productList.jsp" class="btn btn-primary">List of products</a>
+                  </div>
+         
+        </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.sathya.jdbc;
+
+public class DbConnection {
+
+}

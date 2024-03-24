@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert The Products</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script type="text/javascript" src  = "FormValidation.js"></script>
+</head>
+<body>
+
+<div class="container mt-5 text-center">
+<h2 class="text-center font-italic mb-1">Save The Product Data</h2>
+<form method="post" action="./AddProductServlet" enctype="multipart/form-data" onsubmit="return ValidateForm()">
+
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proId">Product ID :</label>
+<input type="text" class="form-cotrol-sm" id="proId" name="proId" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proName">Product Name :</label>
+<input type="text" class="form-cotrol-sm" id="proName" name="proName" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proPrice">Product Price :</label>
+<input type="number" class="form-cotrol-sm" id="proPrice" name="proPrice" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proBrand">Product Brand :</label>
+<input type="text" class="form-cotrol-sm" id="proBrand" name="proBrand" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proMdin">Product MadeIN :</label>
+<input type="text" class="form-cotrol-sm" id="proMdin" name="proMdin" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proMdt">Product Manufacture Date :</label>
+<input type="date" class="form-cotrol-sm" id="proMdt" name="proMdt" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proExpdt">Product Expiray Date :</label>
+<input type="date" class="form-cotrol-sm" id="proExpdt" name="proExpdt" required="required">
+</div>
+
+<div class ="form-group">
+<label class="font-italic font-weight-bold" for="proImage">Choose File:</label>
+<input type="file" class="form-cotrol-sm" id="proImage" name="proImage"  accept="image/*" required="required">
+</div>
+
+<div>
+<input type="submit" class="btn btn-success" value="SaveProduct">
+<a href="ProductList.jsp" class="btn btn-primary">List Of Products</a>
+</div>
+
+</form>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

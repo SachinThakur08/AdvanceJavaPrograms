@@ -1,0 +1,56 @@
+package com.sathya.jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class ProductDao {
+	
+
+	
+	public static int createproductTable() {
+		Connection connection = null;
+		PreparedStatement ps = null;
+		
+		try {
+			
+			connection = DbConnection.createConnection();
+			
+		
+		
+		//1 Creating the Product Table in DB //
+	
+		
+		ps = connection.prepareStatement("Create table Product(proId number, proName varchar2(10) , proPrice number)");
+		
+		//3 Execute the Query //
+		
+		ps.executeUpdate();
+		
+		return 1 ;
+		
+	}
+		catch(SQLException e ) {
+			e.printStackTrace();
+		}
+		
+    finally {
+			
+			try
+			{
+				if(connection!=null && ps!=null)
+				{
+					connection.close();
+					ps.close();
+				}
+			}
+			catch(SQLException s)
+			{
+				s.printStackTrace();
+			}
+          }
+		return 0;
+	}
+	
+	
+}

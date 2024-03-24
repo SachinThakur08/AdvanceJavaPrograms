@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert The Products</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script type="text/javascript" src  = "FormValidation.js"></script>
+</head>
+<body>
+
+<div class="container-fluid  mt-5 text-center">
+<h2 class="text-center font-italic mb-1">Save The Product Data</h2>
+<form method="post" action="./AddProductServlet" enctype="multipart/form-data" onsubmit="return ValidateForm()>
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

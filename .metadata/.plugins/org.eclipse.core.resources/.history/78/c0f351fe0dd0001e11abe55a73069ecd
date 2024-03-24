@@ -1,0 +1,12 @@
+package com.sathya.jdbc;
+
+public class ClientData {
+
+	public static void main(String[] args) {
+		
+		int result = ProductDao.createproductTable();
+		System.out.println(result);
+
+	}
+
+}

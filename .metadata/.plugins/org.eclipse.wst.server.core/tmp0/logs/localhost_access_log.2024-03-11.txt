@@ -1,0 +1,5 @@
+127.0.0.1 - - [11/Mar/2024:14:51:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Mar/2024:14:51:27 +0530] "GET /DisplayListofProducts/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Mar/2024:14:51:27 +0530] "GET /DisplayListofProducts/FormValidation.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Mar/2024:14:51:28 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Mar/2024:14:51:37 +0530] "GET /DisplayListofProducts/ProductList.jsp HTTP/1.1" 200 840

@@ -1,0 +1,22 @@
+package com.sathya.jdbc;
+
+public class ClientData {
+
+	public static void main(String[] args) {
+		
+		
+		// 1. CreateTable 
+	/*	int result = ProductDao.createproductTable();
+		
+		if(result == 1)
+			System.out.println("Product Table Created Successfully");
+		else
+			System.out.println("Table Not Created");
+			*/
+		
+		
+		int result = ProductDao.saveProduct(new Product(101 ,"MemoryChip" ,5500.07));
+
+	}
+
+}
